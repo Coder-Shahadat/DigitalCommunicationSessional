@@ -17,7 +17,7 @@ y=np.zeros(len(t))
 for j in range(len(t)):
     if t[j]>=a and t[j]<=a+0.5:
         y[j]=n[i-1]
-    elif t[j]>=a+0.5 and t[j]<=i:
+    elif t[j]>=a+0.5 and t[j]<i:
         pass
     else:
         a+=1
