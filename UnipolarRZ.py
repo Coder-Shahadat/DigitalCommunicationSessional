@@ -26,9 +26,5 @@ for j in range(len(t)):
 plot.plot(t,y,linewidth="2")
 plot.grid(True)
 plot.axis([0,N,-1.5,1.5])
+plot.title("Unipolar Return to Zero")
 plot.show()
-
-
-
-
-
