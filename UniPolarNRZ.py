@@ -2,13 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 N = 10
-
 # binary bit generating
 n = np.random.randint(2, size=N) 
 print(n);
-
-# mapping function 
-nn = np.where(n == 1, 1, 0)
 
 # Signal Shaping
 i=1
@@ -16,9 +12,9 @@ t = np.arange(0, N+0.01, 0.01)  # 100 Times duration set up for a single binary 
 y = np.zeros(len(t))
 for j in range(len(t)):
     if t[j] <= i:  # Binary input data index Check-up Condition
-        y[j] = nn[i-1]  # Assign value from the mapping function
+        y[j] = n[i-1]  # Assign value from the mapping function
     else:
-        y[j] = nn[i-1]
+        y[j] = n[i-1]
         i += 1  # Binary input data index increment
         
 # plot portion 
